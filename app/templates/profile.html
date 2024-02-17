@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section>
+<div>
+    <img src="{{url_for('static', filename='profilepic.webp')}}" alt="Profile Photo">
+</div>
+<div>
+    <h1>Full Name:Michael Leighton</h1>
+    <p>Username: @mikestrodon</p>
+    <p>Location: Portmore, Jamaica</p>
+    <p>Date Joined: Joined January 2022</p>
+    <p>Short Bio: I am a lover of software development.
+        Contact me if you would like to work on a project together
+    </p>
+    <p>Number of Posts: 7 Posts</p>
+    <p>Number of Followers: 100 Following</p>
+    <p>Number of Following: 250 Followers</p>
+    <button>Follow</button>
+</div>
+</section>
+{% endblock %}
