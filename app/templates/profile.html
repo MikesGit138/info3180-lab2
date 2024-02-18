@@ -1,21 +1,23 @@
 {% extends "base.html" %}
 
 {% block main %}
-<section>
-<div>
+<section class="profile">
+<div class="profile-info">
     <img src="{{url_for('static', filename='profilepic.webp')}}" alt="Profile Photo">
 </div>
 <div>
-    <h1>Full Name:Michael Leighton</h1>
-    <p>Username: @mikestrodon</p>
-    <p>Location: Portmore, Jamaica</p>
-    <p>Date Joined: Joined January 2022</p>
-    <p>Short Bio: I am a lover of software development.
+    <h1>Michael Leighton</h1>
+    <p>@mikestrodon</p>
+    <p>Portmore, Jamaica</p>
+    <p>Joined January 2022</p>
+    <p>I am a lover of software development.
         Contact me if you would like to work on a project together
     </p>
-    <p>Number of Posts: 7 Posts</p>
-    <p>Number of Followers: 100 Following</p>
-    <p>Number of Following: 250 Followers</p>
+    <div class="meta-info">
+        <p>7 Posts</p>
+    <p>100 Following</p>
+    <p>250 Followers</p>
+    </div>
     <button>Follow</button>
 </div>
 </section>
