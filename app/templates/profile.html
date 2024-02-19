@@ -2,14 +2,14 @@
 
 {% block main %}
 <section class="profile">
-<div class="profile-info">
+<div class='profile-head'>
     <img src="{{url_for('static', filename='profilepic.webp')}}" alt="Profile Photo">
-</div>
-<div>
     <h1>Michael Leighton</h1>
     <p>@mikestrodon</p>
     <p>Portmore, Jamaica</p>
-    <p>Joined January 2022</p>
+    <p>{{date_joined}}</p>
+</div>
+<div class="profile-info">
     <p>I am a lover of software development.
         Contact me if you would like to work on a project together
     </p>
